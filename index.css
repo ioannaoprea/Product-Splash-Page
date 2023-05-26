@@ -1,0 +1,141 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* typography */
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow: 0 2px brown ;
+}
+h2 {
+    font-size: 2.25rem;
+    margin: 0.167em 0;
+}
+p {
+    font-size: 1.125rem;
+    line-height: 1.35em;
+}
+.beta-text {
+    font-weight: 900;
+}
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+.beta-text, .subheading {
+    text-transform: uppercase;
+}
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order:-1;
+    margin: 0 auto;
+}
+.first-text {
+    margin-bottom: 0;
+}
+
+/* content */
+.intro, .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.intro {
+    color: #fff;
+    background: navajowhite url("https://img.freepik.com/free-photo/watusi-beige-acrylic-texture-background-wallpaper_53876-104727.jpg?w=1480&t=st=1685091149~exp=1685091749~hmac=a226a19a4c06b58911464e2f74de96d8c5b6eca933c2adb8ff48bd501494d53a");
+    background-size: cover;
+    min-height: 250px;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.main-content {
+    padding-top: 2.5em;
+}
+.main-content p {
+    text-align: left;
+}
+.img-main {
+    width: 220px;
+    border-radius: 30%;
+}
+.main-content p, form {
+    max-width: 450px;
+}
+/* form */
+input {
+    border: 2px solid #d1d5db;
+    margin-bottom: 0.75em;
+    padding: 0.5em;
+}
+input, .btn {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+}
+input:focus {
+    border-color: #9D8189;
+    outline: none;
+    background-color: #FFE5D9;
+}
+.btn {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: none;
+    padding: 1em 0;
+}
+.btn-primary {
+    background-color: #FFE5D9;
+    color: #404040;
+    margin-top: 1em;
+}
+.btn-primary:hover {
+    background-color: #CB997E;
+    cursor: pointer;
+}
+
+/* media querries */
+@media (min-width:576px) {
+    body {
+        display:flex;
+        justify-content: row;
+    } 
+    .intro, .main-content {
+        flex-basis: 50%;
+    }
+    .intro {
+        min-height: 100vh;
+    }
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 2.625rem;
+    }
+    .beta-text {
+        font-size: 1.25rem;
+    }
+}
